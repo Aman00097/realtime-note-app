@@ -44,7 +44,7 @@ realtime-notes-app/
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/your-username/realtime-notes-app.git
+git clone https://github.com/Aman00097/realtime-notes-app.git
 cd realtime-notes-app
 ```
 
@@ -84,26 +84,3 @@ VITE_SERVER_URL=http://localhost:5000
 ```
 
 ---
-
-## ✅ How to Push README to GitHub
-
-After saving this `README.md` in the root of your project:
-
-```bash
-git add README.md
-git commit -m "Add project README"
-git push origin main
-```
-
-✅ Now your GitHub repo will show this README on the main page.
-
----
-
-Let me know if you want to add:
-
-- 📸 Screenshots of the app
-- 🌐 Live URLs from Render
-- 🧪 API endpoints table
-- 📝 License
-
-Happy to help polish it further!
