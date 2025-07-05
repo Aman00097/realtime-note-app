@@ -5,6 +5,7 @@ import axios from 'axios';
 
 function Editor() {
     const { id } = useParams();
+    const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
     const [collaborators, setCollaborators] = useState(0);
 
@@ -12,6 +13,7 @@ function Editor() {
         socket.emit('join-note', id);
 
         axios.get(`${backendURL}/notes/${id}`).then((res) => {
+            setTitle(res.data.title || '');
             setContent(res.data.content || '');
         });
 
@@ -41,6 +43,7 @@ function Editor() {
     return (
         <div style={{ padding: '2rem' }}>
             <h2>Note Room: {id}</h2>
+            <h3>Title: {title}</h3>
             <p>👥 Collaborators: {collaborators}</p>
             <textarea
                 style={{ width: '100%', height: '300px' }}
